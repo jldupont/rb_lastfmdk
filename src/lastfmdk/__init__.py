@@ -1,4 +1,8 @@
 """
+    Rhythmbox plugin for Last.fm desktop client
+    
+    Sends the current playing details to Last.fm Desktop Client 
+    
     @author: Jean-Lou Dupont
 """
 
@@ -14,8 +18,8 @@ class LastFMDKPlugin (rb.Plugin):
         sp = shell.get_player ()
         self.cb = (
                    sp.connect ('playing-song-changed', self.playing_entry_changed)
-                   , sp.connect ('playing-changed', self.playing_changed)
-                   , sp.connect ('playing-song-property-changed', self.playing_song_property_changed)
+                   ,sp.connect ('playing-changed', self.playing_changed)
+                   ,sp.connect ('playing-song-property-changed', self.playing_song_property_changed)
                    )
 
     def deactivate (self, shell):
