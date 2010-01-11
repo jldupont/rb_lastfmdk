@@ -65,7 +65,7 @@ class LastFMDKPlugin (rb.Plugin):
         """
         New Song loaded
         
-        Does seem that this state occurs
+        Does not seem that this state occurs
         """
         self.details=EntryHelper.track_details(self.shell, self.current_entry)
         

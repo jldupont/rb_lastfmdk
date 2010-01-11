@@ -18,7 +18,7 @@ class dkPlayer():
     """
     HOST="127.0.0.1"  #safest
     PORT=33367
-    TIMEOUT=2         #can't really except to take much more time!
+    TIMEOUT=2         #can't really expect to take much more time!
     
     def __init__(self, plugin_name):
         self.plugin_name=plugin_name
