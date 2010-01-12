@@ -6,7 +6,7 @@
     @author: Jean-Lou Dupont
 """
 
-import rhythmdb, rb
+import rhythmdb, rb #@UnresolvedImport
 import dkplayer
 
 PLUGIN_NAME="lastfmdk"
