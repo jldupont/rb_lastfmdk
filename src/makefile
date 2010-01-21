@@ -18,7 +18,7 @@ clean:
 install:
 	@install -D $(CURDIR)/lastfmdk/__init__.py          $(DESTDIR)$(RBP)/lastfmdk/__init__.py
 	@install -D $(CURDIR)/lastfmdk/dkplayer.py          $(DESTDIR)$(RBP)/lastfmdk/dkplayer.py
-	@install -D $(CURDIR)/lastfmdk/lastfmdk.rb-plugin   $(DESTDIR)$(RBP)/lastfmdk.rb-plugin
+	@install -D $(CURDIR)/lastfmdk/lastfmdk.rb-plugin   $(DESTDIR)$(RBP)/lastfmdk/lastfmdk.rb-plugin
 	@python -m py_compile ${DESTDIR}$(RBP)/lastfmdk/__init__.py ${DESTDIR}$(RBP)/lastfmdk/dkplayer.py
 	
 buildsrc:

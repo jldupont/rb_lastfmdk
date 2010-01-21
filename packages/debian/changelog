@@ -1,5 +1,5 @@
-rblastfmdk (_VERSION_-2jldupont1~_DIST_1)  _DIST_; urgency=low
+rblastfmdk (_VERSION_-1jldupont1~_DIST_1)  _DIST_; urgency=low
 
-  * Fixed non-user affecting bug (debug related).
+  * Fixed wrong install location for .rb-plugin file
  
- -- Jean-Lou Dupont <jl@jldupont.com>  Wed, 20 Jan 2010 07:17:00 -0500
+ -- Jean-Lou Dupont <jl@jldupont.com>  Thu, 21 Jan 2010 07:17:00 -0500
