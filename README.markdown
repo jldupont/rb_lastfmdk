@@ -10,3 +10,8 @@ There are 2 methods:
 1. Use the Ubuntu Debian repository [jldupont](https://launchpad.net/~jldupont/+archive/jldupont)  with the package "rblastfmdk"
 
 2. Use the "Download Source" function of this git repo and place the "lastfmdk" folder in ".gnome/rhythmbox/plugins
+
+Changelog
+=========
+
+v1.1: fixed exit bug related to "NewStopped" state

@@ -64,10 +64,8 @@ class LastFMDKPlugin (rb.Plugin):
     def _hNewStopped(self):
         """
         New Song loaded
-        
-        Does not seem that this state occurs
         """
-        self.details=EntryHelper.track_details(self.shell, self.current_entry)
+        #self.details=EntryHelper.track_details(self.shell, self.current_entry)
         
     
     def _hPaused(self):
@@ -120,7 +118,10 @@ class EntryHelper:
         """
         db = shell.props.db
         result={}
-        for prop, key in cls.props.iteritems():
-            result[prop]=db.entry_get(entry, key)
+        try:
+            for prop, key in cls.props.iteritems():
+                result[prop]=db.entry_get(entry, key)
+        except:
+            pass
         return result
     
